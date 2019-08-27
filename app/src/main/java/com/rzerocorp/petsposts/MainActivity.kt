@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
          recyclerView = findViewById<RecyclerView>(R.id.rv_posts)
          val linearLayoutManager = LinearLayoutManager(applicationContext)
 
-         recyclerView.layoutManager = linearLayoutManager
+         recyclerView.layoutManager = linearLayoutManager!!
          recyclerView.itemAnimator = DefaultItemAnimator()
          recyclerView.adapter = postsAdapter
 
